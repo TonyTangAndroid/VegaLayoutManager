@@ -1,9 +1,6 @@
 package com.stone.vega;
 
-/**
- * Created by xmuSistone on 2017/9/20.
- */
-
+/** Created by xmuSistone on 2017/9/20. */
 public class StockEntity {
 
   private String name;

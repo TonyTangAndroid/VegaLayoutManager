@@ -27,10 +27,10 @@ class MyViewHolder extends RecyclerView.ViewHolder {
   public void bindData(StockEntity stockEntity) {
     nameTv.setText(stockEntity.getName());
     currentPriceTv.setText("$" + stockEntity.getPrice());
-    trendFlagIv
-        .setImageResource(stockEntity.getFlag() > 0 ? R.drawable.up_red : R.drawable.down_green);
+    trendFlagIv.setImageResource(
+        stockEntity.getFlag() > 0 ? R.drawable.up_red : R.drawable.down_green);
     grossTv.setText(stockEntity.getGross());
-    grossTv
-        .setTextColor(stockEntity.getFlag() > 0 ? mainActivity.redColor : mainActivity.greenColor);
+    grossTv.setTextColor(
+        stockEntity.getFlag() > 0 ? mainActivity.redColor : mainActivity.greenColor);
   }
 }

@@ -36,5 +36,4 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
   public int getItemCount() {
     return dataList.size();
   }
-
 }

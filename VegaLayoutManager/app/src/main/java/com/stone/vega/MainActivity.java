@@ -106,16 +106,14 @@ public class MainActivity extends AppCompatActivity {
     dataList.add(new StockEntity("Cisco Systems Inc.", 32.49f, -1, "-0.03 (-0.08%)"));
     dataList.add(new StockEntity("Qualcomm Inc.", 52.30f, 1, "+0.05 (+0.10%)"));
     dataList.add(new StockEntity("Sony Inc.", 37.65f, -1, "-0.74 (-1.93%)"));
-
   }
 
   @Override
   public boolean onOptionsItemSelected(MenuItem item) {
-    if (item.getItemId() == android.R.id.home) {// 点击返回图标事件
+    if (item.getItemId() == android.R.id.home) { // 点击返回图标事件
       dataList.remove(0);
       adapter.notifyItemRemoved(0);
     }
     return super.onOptionsItemSelected(item);
   }
-
 }
